@@ -59,7 +59,8 @@ salaries[ salaries$adjustments == max(salaries$adjustnments), "employee"]
 
 
 # For people who did not get a raise, how much money did they lose on average?
-
+paycut <- salaries[salaries$got_raise == FALSE, "adjustments"]
+mean( salaries [salaries$got_raise == FALSE, "adjustments"])
 
 ## Consider: do the above averages match what you expected them to be based on 
 ## how you generated the salaries?
