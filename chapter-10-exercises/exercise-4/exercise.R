@@ -13,7 +13,7 @@ View(grants)
 # Create a variable `organization` that contains the `organization` column of 
 # the dataset
 
-
+chgch
 # Confirm that the "organization" column is a vector using the `is.vector()` 
 # function. 
 # This is a useful debugging tip if you hit errors later!
