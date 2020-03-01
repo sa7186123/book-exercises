@@ -21,7 +21,20 @@ intro_panel
   # A paragraph `p()` describing with the text: "The below diagram was created
   # by the New York Times to illustrate the increasing level of inequality in
   # the US."
+
+# Define a new `ui` variable. This variable should be assigned a `fluidPage()` layout
+# The `fluidPage()` layout should be passed the following:
+my_ui <- fluidPage( 
+  titlePane("Cost Calculator"),
+  tnumericInput(inputID= "price", label="Price (in dollars)", value = 0, min=0 ),
+  tnumericInput(inputID = "quality", label="uantity", valur=1, min=1)
+  p(strong("cost")),
+  textOutput(outputId = "costs"))
+server<- function(inpiut_list, output_list) {
   
+  
+}
+
 
   # An image `img()` to display. This content should have a `src` attribute of
   # "inequality.png" (which will refer to the file in the `www/` folder).
